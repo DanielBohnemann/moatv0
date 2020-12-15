@@ -26,7 +26,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import Footer from "components/Footer/Footer.js";
 import Sidebar from "components/Sidebar/Sidebar.js";
-import FixedPlugin from "components/FixedPlugin/FixedPlugin.js";
+
 
 import routes from "routes.js";
 
@@ -83,10 +83,7 @@ class Dashboard extends React.Component {
           </Switch>
           <Footer fluid />
         </div>
-        <FixedPlugin
-          bgColor={this.state.backgroundColor}
-          handleColorClick={this.handleColorClick}
-        />
+      
       </div>
     );
   }

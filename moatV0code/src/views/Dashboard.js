@@ -42,10 +42,9 @@ import {
 
 // core components
 import PanelHeader from "components/PanelHeader/PanelHeader.js";
-
+import Apple from "./apple.png";
 import {
   dashboardPanelChart,
-  dashboardShippedProductsChart,
   dashboardAllProductsChart,
   dashboard24HoursPerformanceChart,
 } from "variables/charts.js";
@@ -68,8 +67,7 @@ class Dashboard extends React.Component {
             <Col xs={12} md={4}>
               <Card className="card-chart">
                 <CardHeader>
-                  <h5 className="card-category">Global Sales</h5>
-                  <CardTitle tag="h4">Shipped Products</CardTitle>
+                  <CardTitle tag="h4">Apple</CardTitle>
                   <UncontrolledDropdown>
                     <DropdownToggle
                       className="btn-round btn-outline-default btn-icon"
@@ -89,10 +87,7 @@ class Dashboard extends React.Component {
                 </CardHeader>
                 <CardBody>
                   <div className="chart-area">
-                    <Line
-                      data={dashboardShippedProductsChart.data}
-                      options={dashboardShippedProductsChart.options}
-                    />
+                  <img src={Apple} alt="apple"/>
                   </div>
                 </CardBody>
                 <CardFooter>

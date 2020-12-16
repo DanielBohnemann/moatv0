@@ -34,7 +34,7 @@ function hexToRGB(hex, alpha) {
 // // // general variables for charts
 // #############################
 
-const chartColor = "#FFFFFF";
+const chartColor = "#42f56f";
 
 // General configuration for the charts with Line gradientStroke
 const gradientChartOptionsConfiguration = {
@@ -142,9 +142,9 @@ var gradientChartOptionsConfigurationWithNumbersAndGrid = {
 const dashboardPanelChart = {
   data: (canvas) => {
     const ctx = canvas.getContext("2d");
-    var chartColor = "#FFFFFF";
+    var chartColor = "#42f56f";
     var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
-    gradientStroke.addColorStop(0, "#80b6f4");
+    gradientStroke.addColorStop(0, "#42f56f");
     gradientStroke.addColorStop(1, chartColor);
     var gradientFill = ctx.createLinearGradient(0, 200, 0, 50);
     gradientFill.addColorStop(0, "rgba(128, 182, 244, 0)");
@@ -369,7 +369,7 @@ const dashboard24HoursPerformanceChart = {
           pointRadius: 4,
           fill: true,
           borderWidth: 1,
-          data: [80, 99, 86, 96, 123, 85, 100, 75, 88, 90, 123, 155],
+          data: [100, 99, 86, 96, 123, 85, 100, 75, 88, 90, 123, 155],
         },
       ],
     };
